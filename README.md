@@ -1,4 +1,4 @@
-# Kitchen Air Monitor - IoT
+# Smart Air Quality Monitor - IoT
 
 A smart air quality monitoring system using ESP32 and ESP8266 microcontrollers to measure volatile organic compounds (TVOCs), air quality index (AQI), and temperature. The system triggers a fan or other appliance when certain thresholds are met.
 
@@ -17,9 +17,10 @@ A smart air quality monitoring system using ESP32 and ESP8266 microcontrollers t
 - **5V Relay Module** ([General-purpose relay module](https://www.amazon.ca/Relay-Module-Optocoupler-Channel-Trigger/dp/B07WXJ9GTP/ref=sr_1_4?crid=2HCYQUWVBIL8F&dib=eyJ2IjoiMSJ9.YeOKE4dLWItnWDQxygPSgJhy5qXbxwri7QBLYuVaAd9lSI1ESHQ_T9Nyi5GMMSCZPYn_qNYBkceLH8JUF6THlWBE5x4CPBdjbyoOpySpV9Gd0y-reNCehA89VSNrWnNODpoQElr8awHPDfZzQJ1TdIdeRF2cVKtiZCFoaRZOXvvE3bQc6dkHaX62xbXzd23PV2i9D7gqGghBe5LIMK8FgnDJf4cx_wtwJ-U8utQyWLB4AFFMUZFCPUx7bYbk6_2ChQwhZvEP6-VrEdgGZ0uJ24ie1ThMsLXO9dGmgmqVZa4.QzVN9rOw5ft8x3J9Yi31cnoXZd7hQSVRt2YEiXJdmc0&dib_tag=se&keywords=5v%2Bsingle%2Bchannel%2Brelay&qid=1732131884&s=hi&sprefix=5v%2Bsingle%2Bchannel%2Brelay%2Ctools%2C104&sr=1-4&th=1))
 
 ## Libraries Required
+Install Required Libraries in Arduino IDE:
+Open the Arduino IDE and use the Library Manager to install the following:
 - [SparkFun ENS160 Library](https://github.com/sparkfun/SparkFun_Indoor_Air_Quality_Sensor-ENS160_Arduino_Library)
 - [Adafruit AHTX0 Library](https://github.com/adafruit/Adafruit_AHTX0)
-- [ESP-NOW Documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/network/esp_now.html)
 
 ## Workflow
 1. **Sensor Detection**:  
@@ -46,10 +47,10 @@ A smart air quality monitoring system using ESP32 and ESP8266 microcontrollers t
 
 | Module                 | Pin (ESP32) | Pin (Sensor Module) |
 |-------------------------|-------------|----------------------|
-| ENS160 + AHT20 Module  | GPIO21      | SDA                  |
-| ENS160 + AHT20 Module  | GPIO22      | SCL                  |
-| ENS160 + AHT20 Module  | 3.3V        | VCC                  |
-| ENS160 + AHT20 Module  | GND         | GND                  |
+| ENS160 + AHT2X Module  | GPIO21      | SDA                  |
+| ENS160 + AHT2X Module  | GPIO22      | SCL                  |
+| ENS160 + AHT2X Module  | 3.3V        | VCC                  |
+| ENS160 + AHT2X Module  | GND         | GND                  |
 
 #### For ESP8266 and Relay Module:
 
